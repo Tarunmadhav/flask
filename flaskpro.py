@@ -34,6 +34,9 @@ def add_task():
             "status":"Success",
             "message":"task added successfully"
         })
-
+def get_task():
+     return jsonify({
+         "data":contacts
+     })
 if (__name__=="__main__"):
     app.run(debug=True)
